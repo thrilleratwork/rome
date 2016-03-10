@@ -79,7 +79,7 @@ function defaults (options, cal) {
   o.styles._isStylesConfiguration = true;
 
   var styl = o.styles;
-  console.log(o.horizontalAlignment);
+
   styl.horizontalAlignment = 'rd-container-' + o.horizontalAlignment;
   if (styl.back === no) { styl.back = 'rd-back'; }
   if (styl.back === no) { styl.back = 'rd-back'; }
