@@ -73,12 +73,15 @@ function defaults (options, cal) {
   if (o.monthFormat === no) { o.monthFormat = 'MMMM YYYY'; }
   if (o.dayFormat === no) { o.dayFormat = 'DD'; }
   if (o.styles === no) { o.styles = {}; }
-  
-  if (o.horizontalAlignment === no) { o.horizontalAlignment == 'left'; }
+
+  if (o.horizontalAlignment === no) { o.horizontalAlignment = 'left'; }
 
   o.styles._isStylesConfiguration = true;
 
   var styl = o.styles;
+  console.log(o.horizontalAlignment);
+  styl.horizontalAlignment = 'rd-container-' + o.horizontalAlignment;
+  if (styl.back === no) { styl.back = 'rd-back'; }
   if (styl.back === no) { styl.back = 'rd-back'; }
   if (styl.container === no) { styl.container = 'rd-container'; }
   if (styl.positioned === no) { styl.positioned = 'rd-container-attachment'; }

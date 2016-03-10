@@ -50,7 +50,7 @@ function calendar (calendarOptions) {
 
   function init (initOptions) {
     o = defaults(initOptions || calendarOptions, api);
-    if (!container) { container = dom({ className: o.styles.container }); }
+    if (!container) { container = dom({ className: o.styles.container + ' ' + o.styles.horizontalAlignment }); }
     weekdays = o.weekdayFormat;
     weekdayCount = weekdays.length;
     lastMonth = no;
